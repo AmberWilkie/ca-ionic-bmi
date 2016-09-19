@@ -7,14 +7,12 @@ function Person(attr) {
   this.system = attr.system;
 }
 
-Person.prototype.calculate_bmi = function() {
+Person.prototype.calculate_metric = function() {
   calculator = new BMICalculator();
-  // if (this.system == "metric") {
-    calculator.metric_bmi(this);
-  // }else if (this.system == "imperial") {
-  //   calculator.imperial_bmi(this);
-  // }
-  // else {
-  //   alert("Please enter a height and weight")
-  // };
+  calculator.metric_bmi(this);
+};
+
+Person.prototype.calculate_imperial = function() {
+  calculator = new BMICalculator();
+  calculator.imperial_bmi(this);
 };

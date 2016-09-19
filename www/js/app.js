@@ -38,12 +38,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/tabs.html'
   })
 
-  .state('tab.bmi', {
+  .state('tab.metric', {
   url: '/metric',
   views: {
     'tab-metric': {
       templateUrl: 'templates/metric/metric.html',
-      controller: 'BmiController'
+      controller: 'MetricController'
+      }
+    }
+  })
+
+  .state('tab.imperial', {
+  url: '/imperial',
+  views: {
+    'tab-imperial': {
+      templateUrl: 'templates/imperial/imperial.html',
+      controller: 'ImperialController'
       }
     }
   })

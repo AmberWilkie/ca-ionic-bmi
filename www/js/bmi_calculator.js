@@ -1,5 +1,5 @@
 function BMICalculator(){
-};
+}
 
 BMICalculator.prototype.metric_bmi = function(obj) {
   var weight = obj.weight;
@@ -25,15 +25,15 @@ BMICalculator.prototype.imperial_bmi = function(obj) {
 
 function setBMIMessage (obj, value){
   if (obj.bmiValue < 18.5) {
-    obj.bmiMessage = "Too Skinny"
+    obj.bmiMessage = "Too Skinny";
   }
   if (obj.bmiValue >= 18.5 && obj.bmiValue < 25) {
-    obj.bmiMessage = "Still Too Skinny"
+    obj.bmiMessage = "Still Too Skinny";
   }
   if (obj.bmiValue >= 25 && obj.bmiValue < 30) {
-    obj.bmiMessage = "in need of a few more hamburgers..."
+    obj.bmiMessage = "in need of a few more hamburgers...";
   }
   if (obj.bmiValue >= 30) {
-    obj.bmiMessage = "American"
+    obj.bmiMessage = "American";
   }
-};
+}
