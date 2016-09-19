@@ -5,7 +5,7 @@ function Person(attr) {
   this.height_inches = attr.height_inches;
   this.height_feet = attr.height_feet;
   this.system = attr.system;
-};
+}
 
 Person.prototype.calculate_bmi = function() {
   calculator = new BMICalculator();

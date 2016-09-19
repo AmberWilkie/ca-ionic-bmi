@@ -39,10 +39,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('tab.bmi', {
-  url: '/bmi',
+  url: '/metric',
   views: {
-    'tab-bmi': {
-      templateUrl: 'templates/calculator/calculator.html',
+    'tab-metric': {
+      templateUrl: 'templates/metric/metric.html',
       controller: 'BmiController'
       }
     }
