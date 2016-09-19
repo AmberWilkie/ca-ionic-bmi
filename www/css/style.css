@@ -1,1 +1,8 @@
-/* Empty. Add your own CSS if you like */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800';
+
+body {
+  font-family: 'Open Sans', Roboto, SansSerif;
+}
+.button.button-calm {
+  text-transform: uppercase;
+}
